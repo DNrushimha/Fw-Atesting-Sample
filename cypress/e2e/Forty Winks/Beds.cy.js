@@ -1,127 +1,76 @@
-describe('Beds & Frames Page Tests', () => {
-    beforeEach(() => {
-        cy.visit('https://uat.fortywinks.com.au/beds-frames/');
-        cy.viewport(1280, 720);
-    });
+describe('bedMATCH', () => {
+    it('checking the bedMATCH Page', () => {
+        cy.visit('https://uat.fortywinks.com.au/').viewport(1280, 720);
 
-    it('should navigate to different categories', () => {
-        cy.contains('Bed Bases').click();
-        cy.get('.category-bed-bases', { timeout: 20000 }).should('be.visible');
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/').viewport(1280, 720);
 
+        //Bed Bases
 
-        // Click on "Bed Frames" category
-        cy.contains('Bed Frames').click();
-        // Verify that the relevant content is visible
-        cy.get('.category-bed-frames').should('be.visible');
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/bed-bases/').viewport(1280, 720);
 
-        // Click on "Bed Heads" category
-        cy.contains('Bed Heads').click();
-        // Verify that the relevant content is visible
-        cy.get('.category-bed-heads').should('be.visible');
+        //bed frames
 
-        // Click on "Super King" size
-        cy.contains('Super King').click();
-        // Verify that the relevant products are visible
-        cy.get('.products-for-super-king').should('be.visible');
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/').viewport(1280, 720);
 
-        // Click on "King" size
-        cy.contains('King').click();
-        // Verify that the relevant products are visible
-        cy.get('.products-for-king').should('be.visible');
+        cy.visit('https://uat.fortywinks.com.au/beds/beds-frames/').viewport(1280, 720);
 
-        // Click on "Queen" size
-        cy.contains('Queen').click();
-        // Verify that the relevant products are visible
-        cy.get('.products-for-queen').should('be.visible');
+        //Bed heads
 
-        // Click on "Double" size
-        cy.contains('Double').click();
-        // Verify that the relevant products are visible
-        cy.get('.products-for-double').should('be.visible');
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/').viewport(1280, 720);
 
-        // Click on "King Single" size
-        cy.contains('King Single').click();
-        // Verify that the relevant products are visible
-        cy.get('.products-for-king-single').should('be.visible');
+        cy.visit('https://uat.fortywinks.com.au/bedheads/').viewport(1280, 720);
 
-        // Click on "Long Single" size
-        cy.contains('Long Single').click();
-        // Verify that the relevant products are visible
-        cy.get('.products-for-long-single').should('be.visible');
+        //Shop Size
+        //Super King
 
-        // Click on "Single" size
-        cy.contains('Single').click();
-        // Verify that the relevant products are visible
-        cy.get('.products-for-single').should('be.visible');
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/').viewport(1280, 720);
 
-        // Click on "Coastal Beds" style
-        cy.contains('Coastal Beds').click();
-        // Verify that the relevant products are visible
-        cy.get('.products-for-coastal-beds').should('be.visible');
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/super-king/').viewport(1280, 720);
 
-        // Click on "Urban Beds" style
-        cy.contains('Urban Beds').click();
-        // Verify that the relevant products are visible
-        cy.get('.products-for-urban-beds').should('be.visible');
+        //King
 
-        // Click on "Traditional Beds" style
-        cy.contains('Traditional Beds').click();
-        // Verify that the relevant products are visible
-        cy.get('.products-for-traditional-beds').should('be.visible');
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/').viewport(1280, 720);
 
-        // Click on "Scandi Beds" style
-        cy.contains('Scandi Beds').click();
-        // Verify that the relevant products are visible
-        cy.get('.products-for-scandi-beds').should('be.visible');
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/king/').viewport(1280, 720);
 
-        // Click on "Country Beds" style
-        cy.contains('Country Beds').click();
-        // Verify that the relevant products are visible
-        cy.get('.products-for-country-beds').should('be.visible');
+        //Queen
 
-        // Click on "Glam Beds" style
-        cy.contains('Glam Beds').click();
-        // Verify that the relevant products are visible
-        cy.get('.products-for-glam-beds').should('be.visible');
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/').viewport(1280, 720);
 
-        // Click on "Mix & Match" style
-        cy.contains('Mix & Match').click();
-        // Verify that the relevant products are visible
-        cy.get('.products-for-mix-match').should('be.visible');
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/queen/').viewport(1280, 720);
 
-        // Click on "Kids Beds" category
-        cy.contains('Kids Beds').click();
-        // Verify that the relevant content is visible
-        cy.get('.category-kids-beds').should('be.visible');
+        //Double
 
-        // Click on "Australian Made Beds" category
-        cy.contains('Australian Made Beds').click();
-        // Verify that the relevant content is visible
-        cy.get('.category-australian-made-beds').should('be.visible');
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/').viewport(1280, 720);
 
-        // Click on "Modern Australia Beds" category
-        cy.contains('Modern Australia Beds').click();
-        // Verify that the relevant content is visible
-        cy.get('.category-modern-australia-beds').should('be.visible');
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/double/').viewport(1280, 720);
 
-        // Click on "Crafted Luxe Beds" category
-        cy.contains('Crafted Luxe Beds').click();
-        // Verify that the relevant content is visible
-        cy.get('.category-crafted-luxe-beds').should('be.visible');
+        //King Single
 
-        // Click on "Timber Mix & Match" category
-        cy.contains('Timber Mix & Match').click();
-        // Verify that the relevant content is visible
-        cy.get('.category-timber-mix-match').should('be.visible');
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/').viewport(1280, 720);
 
-        // Click on "Designer Upholstery" category
-        cy.contains('Designer Upholstery').click();
-        // Verify that the relevant content is visible
-        cy.get('.category-designer-upholstery').should('be.visible');
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/king-single/').viewport(1280, 720);
 
-        // Click on "Sleep Saver Beds" category
-        cy.contains('Sleep Saver Beds').click();
-        // Verify that the relevant content is visible
-        cy.get('.category-sleep-saver-beds').should('be.visible');
-    });
-});
+        //long Single
+
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/').viewport(1280, 720);
+
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/long-single/').viewport(1280, 720);
+
+        //Single
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/').viewport(1280, 720);
+
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/single/').viewport(1280, 720);
+
+        //
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/').viewport(1280, 720);
+        cy.visit('').viewport(1280, 720);
+        //
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/').viewport(1280, 720);
+        cy.visit('').viewport(1280, 720);
+        //
+        cy.visit('https://uat.fortywinks.com.au/beds-frames/').viewport(1280, 720);
+        cy.visit('').viewport(1280, 720);
+        // cy.visit('').viewport(1280, 720); cy.visit('').viewport(1280, 720); cy.visit('').viewport(1280, 720); cy.visit('').viewport(1280, 720); cy.visit('').viewport(1280, 720); cy.visit('').viewport(1280, 720); cy.visit('').viewport(1280, 720); cy.visit('').viewport(1280, 720); cy.visit('').viewport(1280, 720);
+    })
+})
