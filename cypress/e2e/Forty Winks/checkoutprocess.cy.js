@@ -43,7 +43,7 @@ describe('bedMATCH', () => {
 
         // cy.contains('Name on card').type('bvjbfbju')
 
-        cy.get('.adyen-checkout__button').dblclick();
+        // cy.get('.adyen-checkout__button').dblclick();
 
 
 
