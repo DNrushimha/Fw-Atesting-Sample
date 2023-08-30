@@ -1,5 +1,5 @@
-describe('bedMATCH', () => {
-    it('checking the bedMATCH Page', () => {
+describe('Search', () => {
+    it('checking the Search Page', () => {
         cy.visit('https://uat.fortywinks.com.au/').viewport(1280, 720);
 
 

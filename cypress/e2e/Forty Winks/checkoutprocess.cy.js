@@ -1,5 +1,5 @@
-describe('bedMATCH', () => {
-    it('checking the bedMATCH Page', () => {
+describe('Check out process', () => {
+    it('checking the checkoutprocess', () => {
         cy.visit('https://uat.fortywinks.com.au/').viewport(1280, 720);
 
         //login
@@ -28,14 +28,18 @@ describe('bedMATCH', () => {
 
         //cy.get('.py-8').click();
 
-        cy.get('.adyen-checkout__payment-method--afterpaytouch > .adyen-checkout__payment-method__header').click();
+        //cy.get('.adyen-checkout__payment-method--afterpaytouch > .adyen-checkout__payment-method__header').click();
 
-        cy.get('.adyen-checkout__payment-method--paypal > .adyen-checkout__payment-method__header').click();
+        //cy.get('.adyen-checkout__payment-method--paypal > .adyen-checkout__payment-method__header').click();
+
+        //cy.get('.adyen-checkout__payment-method--card > .adyen-checkout__payment-method__header').click();
 
         cy.get('.adyen-checkout__payment-method--card > .adyen-checkout__payment-method__header').click();
 
 
-        //cy.contains('Card number').type('2665 8955 2516 4654')
+        //cy.get('[id=".adyen-checkout__field--cardNumber > .adyen-checkout__label > .adyen-checkout__input-wrapper > .adyen-checkout__input"]').type('2665 8955 2516 4654')
+
+        //cy.contains('Card number').type('')
 
         //cy.contains('Expiry date').type('0530')
 

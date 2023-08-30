@@ -1,5 +1,5 @@
-describe('bedMATCH', () => {
-    it('checking the bedMATCH Page', () => {
+describe('Bedroom Furniture', () => {
+    it('checking the Bedroom Furniture Page', () => {
 
 
         cy.visit('https://uat.fortywinks.com.au/bedroom-furniture/').viewport(1280, 720);
