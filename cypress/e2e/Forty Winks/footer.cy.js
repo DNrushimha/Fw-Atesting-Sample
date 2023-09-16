@@ -155,7 +155,7 @@ describe('Finding store', () => {
 
         cy.get(':nth-child(6) > .inputField').type('nrushimhadevulapalli@gmail.com')
 
-        cy.get(':nth-child(7) > .inputField').type('0412364598')
+        cy.get(':nth-child(7) > .inputField').type('0452526992')
 
         cy.get(':nth-child(8) > .inputField').type('uiuiuiuf')
 

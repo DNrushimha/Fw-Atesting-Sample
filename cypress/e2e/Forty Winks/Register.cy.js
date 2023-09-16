@@ -12,7 +12,7 @@ describe('Registration Test', () => {
 
         cy.get(':nth-child(3) > .inputField').type('anonymou@gmail.com');
 
-        cy.get(':nth-child(4) > .inputField').type('0412345678');
+        cy.get(':nth-child(4) > .inputField').type('0452526992');
 
         cy.get(':nth-child(5) > .inputField').type('Devulapalli@123');
 
