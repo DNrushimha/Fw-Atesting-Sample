@@ -1,6 +1,6 @@
 describe('Registration Test', () => {
     it('Registers a new user', () => {
-        cy.visit('https://fortywinks.com.au/')
+        cy.visit('https://uat.fortywinks.com.au/')
 
         cy.viewport(1280, 720);
         cy.get('.justify-end > :nth-child(1)').click();
