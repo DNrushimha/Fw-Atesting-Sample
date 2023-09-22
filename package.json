@@ -11,11 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "adit": "^1.0.11",
     "nodemon": "^3.0.1",
     "update": "^0.7.4"
   },
   "devDependencies": {
     "cypress": "^13.2.0",
-    "cypress-dark": "^1.8.3"
+    "cypress-dark": "^1.1.0"
   }
 }
