@@ -8,7 +8,7 @@ on:
 
 jobs:
   # Define one or more jobs to run
-  my_job_name:
+  my_job_name: Cypess
     runs-on: ubuntu-latest  # Specify the runner platform
 
     steps:
