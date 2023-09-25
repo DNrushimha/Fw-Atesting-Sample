@@ -1,4 +1,4 @@
-describe('LDelevery address changing Test', () => {
+describe('Delevery address changing Test', () => {
     it('changing the delivery address of the user', () => {
         cy.visit('https://uat.fortywinks.com.au/').viewport(1280, 720);
 
