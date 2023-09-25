@@ -4,4 +4,4 @@ describe('bedMATCH', () => {
 
         cy.get('.gap-3 > :nth-child(4) > a').click();
     })
-})
+});
