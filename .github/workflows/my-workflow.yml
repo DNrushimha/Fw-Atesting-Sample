@@ -1,4 +1,4 @@
-name: My Custom Workflow Name
+name: Cypress Tests Workflow
 
 on:
   # Define the event that triggers the workflow
@@ -8,12 +8,24 @@ on:
 
 jobs:
   # Define one or more jobs to run
-  my_job_name: Cypess
+  cypress_tests:
     runs-on: ubuntu-latest  # Specify the runner platform
 
     steps:
-      # Define steps to be executed in the job
+      # Step 1: Checkout the code from the repository
       - name: Checkout Code
         uses: actions/checkout@v2  # Action for checking out your code
 
-      # Add more steps as needed
+      # Step 2: Install Node.js and dependencies
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14  # Specify the Node.js version you need
+
+      # Step 3: Install project dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      # Step 4: Run Cypress tests
+      - name: Run Cypress Tests
+        run: npm run cy:run  # Adjust this command based on your project's setup
