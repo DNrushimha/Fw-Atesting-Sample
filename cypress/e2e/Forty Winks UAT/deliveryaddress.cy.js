@@ -11,7 +11,7 @@ describe('LDelevery address changing Test', () => {
 
 
 
-        cy.get('#address').type('3029');
+        cy.get('#address').type('3000');
 
         cy.get('form > .bg-primary').click();
 
