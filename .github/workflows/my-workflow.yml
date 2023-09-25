@@ -1,0 +1,19 @@
+name: My Custom Workflow Name
+
+on:
+  # Define the event that triggers the workflow
+  push:
+    branches:
+      - main  # Replace with your branch name
+
+jobs:
+  # Define one or more jobs to run
+  my_job_name:
+    runs-on: ubuntu-latest  # Specify the runner platform
+
+    steps:
+      # Define steps to be executed in the job
+      - name: Checkout Code
+        uses: actions/checkout@v2  # Action for checking out your code
+
+      # Add more steps as needed
