@@ -7,6 +7,7 @@ module.exports = {
 
 
 module.exports = defineConfig({
+  projectId: '7zxj6f',
   e2e: {
     watchForFileChanges: false,
     defaultCommandTimeout: 60000,
