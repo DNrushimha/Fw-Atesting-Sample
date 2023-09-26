@@ -1,11 +1,20 @@
 describe('Cart', () => {
     it('Add item to cart on product page', () => {
         // Visit the product page
-        cy.visit('https://uat.fortywinks.com.au/products/catalina-plush-kb-mattress/').viewport(1280, 720);
+        cy.visit('https://uat.fortywinks.com.au/').viewport(1280, 720);
 
-        // Wait for the "Add to Cart" button to be visible and then click it
+        cy.get('.justify-end > :nth-child(1)').click();
 
+        cy.get(':nth-child(1) > .inputField').type('anonymous@gmail.com');
+        cy.get(':nth-child(2) > .inputField').type('Devulapalli@123');
 
-        // You may need to add further assertions or interact with the cart as needed.
+        cy.get('form > :nth-child(4) > .flex').click();
+
+        cy.get('span.items-center').click();
+
+        cy.contains('Add to cart').click();
+
+        cy.contains('View & checkout').click();
+
     });
 });
